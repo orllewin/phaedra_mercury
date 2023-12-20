@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/screen_background">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/header_padding"
+        android:background="@color/header">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_button"
+            android:paddingLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/header_text"
+            android:background="@color/header"
+            android:textColor="@color/text"
+            android:text="Bookmarks" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/bookamrks_list_view"
+        android:layout_below="@+id/header"
+        android:layout_width="fill_parent"
+        android:clipToPadding="false"
+        android:padding="@dimen/small_padding"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/no_bookmarks_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="You don't have any bookmarks yet"
+        android:textSize="@dimen/text_default"
+        android:visibility="gone"/>
+</RelativeLayout>

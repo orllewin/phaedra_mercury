@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/go_home"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:text="Home"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_small"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/go_back"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_small"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/hr" />
+
+    <TextView
+        android:id="@+id/add_bookmark"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:text="Add Bookmark"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_small"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/bookmarks"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:text="Bookmarks"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_small"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/hr" />
+
+    <TextView
+        android:id="@+id/preferences"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:text="Settings"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_small"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:textColor="@color/text"
+        android:text="About"
+        android:textSize="@dimen/text_small"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:textColor="@color/text"
+        android:text="Cancel"
+        android:textSize="@dimen/text_small"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        />
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/screen_background">
+
+    <RelativeLayout
+        a:id="@+id/header"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:padding="@dimen/header_padding"
+        a:background="@color/header">
+
+        <ImageButton
+            a:id="@+id/back_button"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:background="@null"
+            a:layout_centerVertical="true"
+            a:layout_alignParentLeft="true"
+            a:src="@drawable/ic_close" />
+
+        <TextView
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_toRightOf="@+id/back_button"
+            a:paddingLeft="16dp"
+            a:layout_centerVertical="true"
+            a:textColor="@color/text"
+            a:textSize="@dimen/header_text"
+            a:background="@color/header"
+            a:text="Settings" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        a:id="@+id/bookamrks_list_view"
+        a:layout_below="@+id/header"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:padding="@dimen/def_padding"
+        a:orientation="vertical">
+
+        <TextView
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="@string/home_capsule"
+            a:textColor="@color/text"
+            a:textSize="@dimen/text_small"
+            a:layout_marginTop="16dp"/>
+
+        <EditText
+            a:id="@+id/home_capsule_edit_text"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:textColor="@color/text"
+            a:textColorHint="#666666"
+            a:padding="6dp"
+            a:hint="@string/mercury_protocol"
+            a:textSize="@dimen/text_default"
+            a:background="@drawable/edittext_background"/>
+
+        <Button
+            a:id="@+id/save_button"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="@dimen/def_padding"
+            a:padding="8dp"
+            a:layout_gravity="right"
+            a:textSize="@dimen/text_default"
+            a:textColor="@color/text"
+            a:background="@color/header"
+            a:text="Save" />
+
+    </LinearLayout>
+</RelativeLayout>

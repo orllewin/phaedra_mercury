@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/screen_background">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/header_padding"
+        android:background="@color/header">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_button"
+            android:paddingLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/header_text"
+            android:background="@color/header"
+            android:textColor="@color/text"
+            android:text="Add Bookmark" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bookamrks_list_view"
+        android:layout_below="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/def_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Label"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/bookmark_label_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_default"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_small"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/bookmark_address_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_default"
+            android:background="@drawable/edittext_background"/>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_padding"
+            android:padding="8dp"
+            android:layout_gravity="right"
+            android:textSize="@dimen/text_default"
+            android:background="@color/header"
+            android:textColor="@color/text"
+            android:text="Save" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_bookmarks_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="You don't have any bookmarks yet"
+        android:textSize="@dimen/text_default"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Phaedra</string>
+    <string name="home_capsule">Home capsule</string>
+    <string name="mercury_protocol">mercury://</string>
+</resources>

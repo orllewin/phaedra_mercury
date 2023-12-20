@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/header">
+
+        <EditText
+            android:id="@+id/address_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginRight="16dp"
+            android:text="mercury://oppen.digital"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mertext_listview"
+        android:layout_below="@+id/header"
+        android:divider="@null"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:cacheColorHint="#00000000"
+        android:background="@color/screen_background"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/loading_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:text="Loading..."
+        android:textColor="#1d1d1d"
+        android:paddingLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:background="@color/header"/>
+
+    <RelativeLayout
+        android:id="@+id/fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/overflow_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_overflow"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

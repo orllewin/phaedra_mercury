@@ -1,0 +1,2 @@
+rootProject.name = "Phaedra"
+include ':app'
